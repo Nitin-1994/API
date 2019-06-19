@@ -17,14 +17,14 @@ def main():
 			print("This is not a valid movie name")
 
 			truth_value=input("Do you want to type movie name again?(y/n) : ")
-                        if truth_value == 'y':
-                                continue
+			if truth_value == 'y':
+				continue
 
-                        elif truth_value == 'n':
-                                exit()
-                        else:
-                                print("This is not a valid choice, thus exiting")
-                                exit()
+			elif truth_value == 'n': 
+				exit()
+			else:
+				print("This is not a valid choice, thus exiting")
+				exit()
 
 		
 			
