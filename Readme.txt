@@ -20,7 +20,7 @@ After the successful execution of above command, we will be inside docker contai
    
    # python /var/tmp/python-script.py
 
-#####################
+######################
 Notes:-
 --- In case we want to get out of container we will type "exit" on shell
 
