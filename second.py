@@ -41,7 +41,7 @@ def main():
 				if int(Percent[:len(Percent)-1]) <30:
 					print("You can watch movie as rotten tomatoes is only",rotten['Value'])
 				else:
-					print("Don't watch as it does not seems to be good movie")
+					print("Don't watch as it does not seems to be good movie and rootem tomatoes value is",rotten['Value'])
 
 			except:
 				print("No ratings found")
