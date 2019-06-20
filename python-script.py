@@ -4,20 +4,8 @@ def MovieTitle():
 	movie_name=str(input("Enter the search string : "))
 	
 	cmd=str(f"http://www.omdbapi.com/?apikey=88deb2b&t={movie_name}")
-	#print(cmd)
 	return cmd
 
-#MovieTitle()
-########################################################################
-#exit()  
-# api-endpoint 
-# location given here 
-#location = "delhi technological university"
-# defining a params dict for the parameters to be sent to the API 
-#PARAMS = {'address':location} 
-# sending get request and saving the response as response object 
-#r = requests.get(url = URL, params = PARAMS) 
-###############################################################################
 
 def main():
 	while True:
@@ -26,9 +14,9 @@ def main():
 # extracting data in json format 
 		data = r.json()
 		if 'Error' in data:
-			print("Wrong Input,try again")
+			print("This is not a valid movie name")
 
-			truth_value=input("Do you want to retype ? : ")
+			truth_value=input("Do you want to type movie name again?(y/n) : ")
 			if truth_value != 'y':
 				exit()
 			continue
@@ -43,12 +31,12 @@ def main():
 					
 				Percent=rotten['Value']
 				if int(Percent[:len(Percent)-1]) <30:
-					print("You can watch movie as rotten tomatoes is only",rotten['Value'])
+					print("You can watch this movie as rotten tomatoes is only",rotten['Value'])
 				else:
-					print("Don't watch as it does not seems to be good movie and rootem tomatoes value is",rotten['Value'])
+					print("Don't watch this movie as it does not seems to be good movie and it has rotten tomatoes value ",rotten['Value'])
 
 			except:
-				print("No ratings found")
+				print("There isn't any rating found for this script")
 			exit()
 
 
