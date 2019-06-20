@@ -36,7 +36,7 @@ def main():
 					print("Don't watch this movie as it does not seems to be good movie and it has rotten tomatoes value ",rotten['Value'])
 
 			except:
-				print("There isn't any rating found for this script")
+				print("There isn't any rating found for this movie")
 			exit()
 
 
