@@ -5,7 +5,7 @@ Below are the instructions which needs to be performed for successful execution 
 2. Run git clone command
  
    # git clone https://github.com/Nitin-1994/API.git
-The above command will clone the public repo on host linux machine and "API" folder will get create at current path after it's successful execution
+The above command will clone the public repo on host linux machine and "API" folder will get created at current path after it's successful execution
 
 3. Enter into "API" directory using below command
    
