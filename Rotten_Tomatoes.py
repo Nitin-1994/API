@@ -1,12 +1,12 @@
 import requests
 from goto import with_goto
+import sys
 
 @with_goto
 def main():
-    label .begin
     rotten_value = None
 
-    movie_name=str(input("Enter the search string : ")).strip()
+    movie_name=sys.argv[1:]
     movie_url = f"http://www.omdbapi.com/?apikey=88deb2b&t={movie_name}"
     r = requests.get(movie_url)
 
@@ -16,12 +16,8 @@ def main():
     try:
         rating = data['Ratings']
     except:
-        print("The is no such movie, Do you want to try again ?")
-        output=input("Enter y/n :")
-        if output=="y":
-            goto .begin
-        else:
-           goto .end
+        print("The is no such movie, Try again")
+        goto .end
 
     for i in range(len(rating)):
         if rating[i]['Source'] == 'Rotten Tomatoes':
@@ -41,5 +37,4 @@ def main():
     label .end
 
 main()
-
 
