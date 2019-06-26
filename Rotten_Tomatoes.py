@@ -28,13 +28,12 @@ def main():
     if rotten_value:
         rotten_value=int(rotten_value[:-1])
         if rotten_value > 30:
-            print("Movies has high rating of Rotten Tomatoes, don't watch")
+            print("Movies has high rating on Rotten Tomatoes, so it could be good movie to watch")
         else:
-            print("Movies has low rating of Rotten Tomatoes, you can watch")
+            print("Movies has low rating on Rotten Tomatoes, you can ignore this movie")
     else:
         print("Rotten tomatoes value is not present")
 
     label .end
 
 main()
-
