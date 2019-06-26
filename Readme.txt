@@ -1,4 +1,4 @@
-Below are the instructions which needs to be performed for successful execution of docker container and run script inside it to get "Rotten Tomatoes" value of any movie if it exists
+ Below are the instructions which needs to be performed for successful execution of docker container and run script inside it to get "Rotten Tomatoes" value of any movie if it exists
 1. Install git 
     # yum install git
 
@@ -18,7 +18,10 @@ After the successful execution of above command, we will be inside docker contai
 
 5. Now run python script inside docker container and input movie whose ratings we need.
    
-   # python /var/tmp/Rotten_Tomatoes.py
+   # python /var/tmp/Rotten_Tomatoes.py <Movie-Name>
+   
+   example:-
+   python /var/tmp/Rotten_Tomatoes.py zero dark thirty
 
 ######################
 Notes:-
